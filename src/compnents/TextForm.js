@@ -19,7 +19,7 @@ export default function TextForm(props) {
     const handleAltClick = () => {
         let newText = text.split('').map((c,i) => i % 2 === 0 ? c.toLowerCase() : c.toUpperCase()).join('');   
         setText(newText)
-        props.showAlert("Coverted To LowerCase","success")
+        props.showAlert("Coverted To Alternating Case","success")
     }
 
     const handleReverse = ()=>{
